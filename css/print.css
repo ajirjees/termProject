@@ -1,0 +1,36 @@
+body {
+	margin:0; 
+	padding:0; 
+	line-height: 1.4em; /*specify the amount of vertical space between lines of text*/
+	word-spacing:1px; /*specify the amount of space between words*/
+	letter-spacing:0.2px; /*specify the amount of space between letters*/
+	font: 13px Arial, Helvetica,"Lucida Grande", serif; 
+	color: #000;
+}
+/*Header*/
+.header {
+	display: none;
+}
+/*Image*/
+#img{
+	border:none;
+}
+/*hide side*/
+.aside {
+	display:none;
+}
+.menu ul {
+	display:none;
+}
+/*Footer*/
+footer {
+	margin-top:10px;
+}
+/*print notic*/
+#printnotice {
+	display: block;
+}
+/*hide form*/
+.formContact{
+	display: none;
+}

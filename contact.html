@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Ammar Jirjees">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+  <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  <!--header-->
+  <header>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </div>
+  </header>
+  <!--content of the page-->
+  <div class="row">
+    <div class="col-3 col-s-3">
+      <!--right side-->
+    </div>
+    <div class="col-6 col-s-9">
+      <form id="myform" action="insert.php" name="contact">
+        <label>Name</label>&nbsp&nbsp<span id="name_error"></span>
+        <input type="text" name="name" placeholder="Enter your full name" id="name">
+        <label>Email</label>&nbsp&nbsp<span id="email_error"></span>
+        <input type="text" name="email" placeholder="Enter your email" id="email">
+        <label>Phone Number</label>&nbsp&nbsp<span id="phone_error"></span>
+        <input type="text" name="phone" placeholder="Enter your phone number" id="phone">
+        <label>How would you like to be contacted in the future?</label>
+        <select name="contactWay" size="1">
+          <option value="email">E-mail</option>
+          <option value="text">Text Message</option>
+          <option value="call">Phone Call</option>
+        </select>
+        <label>Message</label>&nbsp&nbsp<span id="message_error"></span>
+        <textarea placeholder="Enter your message..." name="message" rows="4" cols="50" id="message"></textarea>
+        <input type="submit" value="Submit" onclick="postStuff();">
+        <input type="reset" value="Reset">
+      </form>
+      <div id="note"></div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <span>&copy; 2019 copyright</span>
+    <p id="printnotice"> Printed from: www.ammarjirjees.com/contact.html</p>
+    <div class="soical">
+      <a href="https://github.com/ajirjees" target="_blank" class="socialIcons"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ammar-jirjees" target="_blank" class="socialIcons">
+        <i class="fa fa-linkedin-square"></i></a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+  </footer>
+</body>
+</html>
