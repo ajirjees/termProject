@@ -70,14 +70,16 @@ div a {
 /*change the layout of the navigation bar for all the screens 
 that have a width less or equal than 400px*/
 @media only screen and (max-width: 400px) {
-  /* deletes margin on top or bottom of the a tag and shows elements in a column*/
   .topnav{
-    margin: 0;
-    flex-direction: column;
+    display: flex;
+    padding-bottom: 0;
+    align-items: center;
   }
- /* makes sure that the a tag will take the entire screen*/
   .topnav a{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-size: 11px;
   }
 }
 /*social icons*/
