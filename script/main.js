@@ -1,24 +1,5 @@
 $(document).ready(function () { 
   $(".animation").addClass("animated shake");
-  // Create the dropdown base
-  $("<select />").appendTo("nav");
-  // Create default option "Go to..."
-  $("<option />", {
-  	"selected": "selected",
-  	"value"   : "",
-  	"text"    : "Go to..."
-}).appendTo("nav select");
-// Populate dropdown with menu items
-$("nav a").each(function() {
- var el = $(this);
- $("<option />", {
-     "value"   : el.attr("href"),
-     "text"    : el.text()
- }).appendTo("nav select");
-});
-$("nav select").change(function() {
-  window.location = $(this).find("option:selected").val();
-});
 });
 //function valid inputs, in success call function AJAX to post data
 function postStuff (){
@@ -99,7 +80,7 @@ function postStuff (){
 		//clear validation message if the input error fixed
 		document.getElementById('message_error').innerHTML = "";
 		document.getElementById('message').style.borderColor = "";
-		//call function postData if all pass check 
+		//call function postData if all inputs valid
 		postData();
 		document.getElementById('note').innerHTML = "";
 		}//if message empty, Styling errors written to the DOM
@@ -130,7 +111,7 @@ function postStuff (){
 				$('#myform textarea').val('');
 			},
 			error: function(){
-				document.getElementById('note').innerHTML = 'There is an error please try later!';
+				document.getElementById('note').innerHTML = 'There is an error please try again later!';
 		}
 	})
 	}

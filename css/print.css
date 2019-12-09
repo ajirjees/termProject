@@ -19,8 +19,11 @@ body {
 .aside {
 	display:none;
 }
-.menu ul {
+.topnav {
 	display:none;
+}
+.hvrbox-layer_top{
+	display: none;
 }
 /*Footer*/
 footer {

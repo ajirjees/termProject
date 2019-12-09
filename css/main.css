@@ -112,6 +112,7 @@ footer {
   padding: 13px;
   
 }
+/*center Technologies index.html*/
 #tech{
   text-align: center;
   font-style: italic;
@@ -154,34 +155,6 @@ footer {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-}
-/*Style table ID*/
-#careerTable {
-  border-collapse: collapse;
-  width: 100%;
-}
-/*Style td*/
-#careerTable td{
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-/*Specify a background color for every <tr> element that is the second child of its parent*/
-#careerTable tr:nth-child(even){
-    background-color: #f2f2f2;
-}
-/* Change color on hover */
-#careerTable tr:hover {
-    background-color: #20B2AA;
-}
-/*Style th*/
-#careerTable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #BDB76B;
-  color: white;
-  border: 1px solid #ddd;
-  padding: 8px;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -233,7 +206,7 @@ input[type=reset] {
     width: 100px;
     height: 100px; 
   }
-}
+}/*style projects columns*/
 .hvrbox * {
   box-sizing: border-box;
 }
